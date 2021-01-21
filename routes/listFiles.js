@@ -6,7 +6,6 @@ var path = './public/audio';
 router.get('/', (req, res, next) => {
 
     const args = req.baseUrl.split('/').shift();
-    console.log(res.baseUrl);
 
     const files = fs.readdirSync(path);
     const responseObject = {
